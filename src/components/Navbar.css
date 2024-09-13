@@ -1,0 +1,28 @@
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 227, 232);
+}
+.logo{
+    margin-right: auto;
+    padding-left: 10px;
+    color: rgb(71, 68, 68);
+}
+.logo:hover{
+    text-decoration: none;
+    color: rgb(71, 68, 68) ;
+}
+a{
+    color: rgb(118, 108, 93);
+    text-decoration: none;
+    margin-left: 12px;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+}
+a:hover{
+    color: rgb(219, 199, 169);
+    text-decoration: underline;
+    transition: 300ms;
+}
