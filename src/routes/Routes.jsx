@@ -3,6 +3,7 @@ import Home from "../components/Home";
 import About from "../components/About";
 import Blogs from "../components/Blogs";
 import Navbar from "../components/Navbar";
+import NotFound from "../components/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,33 @@ const router = createBrowserRouter([
       </>
     ),
   },
-  { path: "/about", element: (<><Navbar /><About /></>) },
-  { path: "/blogs", element: (<><Navbar /><Blogs /></>) },
+  {
+    path: "/about",
+    element: (
+      <>
+        <Navbar />
+        <About />
+      </>
+    ),
+  },
+  {
+    path: "/blogs",
+    element: (
+      <>
+        <Navbar />
+        <Blogs />
+      </>
+    ),
+  },
+  {
+    path: "*",
+    element: (
+      <>
+        <Navbar />
+        <NotFound />
+      </>
+    ),
+  },
 ]);
 
 export default function Router() {

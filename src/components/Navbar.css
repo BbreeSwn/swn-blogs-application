@@ -2,19 +2,20 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(255, 227, 232);
+    background: rgb(77, 65, 67);
+    max-height: 45px;
 }
 .logo{
     margin-right: auto;
     padding-left: 10px;
-    color: rgb(71, 68, 68);
+    color: rgb(243, 204, 147);
 }
 .logo:hover{
     text-decoration: none;
-    color: rgb(71, 68, 68) ;
+    color: rgb(243, 204, 147);
 }
 a{
-    color: rgb(118, 108, 93);
+    color: rgb(255, 238, 238);
     text-decoration: none;
     margin-left: 12px;
     font-size: 18px;
@@ -22,7 +23,6 @@ a{
     font-weight: bold;
 }
 a:hover{
-    color: rgb(219, 199, 169);
-    text-decoration: underline;
+    color: rgb(243, 204, 147);
     transition: 300ms;
 }
