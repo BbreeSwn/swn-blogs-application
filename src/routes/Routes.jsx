@@ -1,9 +1,14 @@
-import { RouterProvider, createBrowserRouter,Navigate } from "react-router-dom";
+import {
+  RouterProvider,
+  createBrowserRouter,
+  Navigate,
+} from "react-router-dom";
 import Home from "../components/Home";
 import About from "../components/About";
 import Blogs from "../components/Blogs";
 import Navbar from "../components/Navbar";
 import NotFound from "../components/NotFound";
+import Detail from "../components/Detail";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +39,15 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "/blog/:id",
+    element: (
+      <>
+        <Navbar />
+        <Detail />
+      </>
+    ),
+  },
+  {
     path: "*",
     element: (
       <>
@@ -42,7 +56,7 @@ const router = createBrowserRouter([
       </>
     ),
   },
-  {path:"/home",element:(<Navigate to="/" />)}
+  { path: "/home", element: <Navigate to="/" /> },
 ]);
 
 export default function Router() {
