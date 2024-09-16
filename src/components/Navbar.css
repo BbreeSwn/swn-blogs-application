@@ -1,0 +1,28 @@
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(77, 65, 67);
+    max-height: 45px;
+}
+.logo{
+    margin-right: auto;
+    padding-left: 10px;
+    color: rgb(243, 204, 147);
+}
+.logo:hover{
+    text-decoration: none;
+    color: rgb(243, 204, 147);
+}
+a{
+    color: rgb(255, 238, 238);
+    text-decoration: none;
+    margin-left: 12px;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+}
+a:hover{
+    color: rgb(243, 204, 147);
+    transition: 300ms;
+}
